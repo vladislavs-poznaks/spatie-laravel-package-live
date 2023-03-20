@@ -61,10 +61,7 @@
         "laravel": {
             "providers": [
                 "NothingWorks\\DiskMonitor\\DiskMonitorServiceProvider"
-            ],
-            "aliases": {
-                "DiskMonitor": "NothingWorks\\DiskMonitor\\Facades\\DiskMonitor"
-            }
+            ]
         }
     },
     "minimum-stability": "dev",
