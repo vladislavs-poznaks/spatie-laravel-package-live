@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace NothingWorks\DiskMonitor;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use VendorName\Skeleton\Commands\SkeletonCommand;
+use NothingWorks\DiskMonitor\Commands\RecordDiskMetricsCommand;
 
-class SkeletonServiceProvider extends PackageServiceProvider
+class DiskMonitorServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -16,10 +16,10 @@ class SkeletonServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('skeleton')
+            ->name('disk-monitor')
             ->hasConfigFile()
             ->hasViews()
-            ->hasMigration('create_skeleton_table')
-            ->hasCommand(SkeletonCommand::class);
+            ->hasMigration('create_disk-monitor_table')
+            ->hasCommand(RecordDiskMetricsCommand::class);
     }
 }
