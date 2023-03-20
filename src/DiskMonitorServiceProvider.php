@@ -2,9 +2,9 @@
 
 namespace NothingWorks\DiskMonitor;
 
+use NothingWorks\DiskMonitor\Commands\RecordDiskMetricsCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use NothingWorks\DiskMonitor\Commands\RecordDiskMetricsCommand;
 
 class DiskMonitorServiceProvider extends PackageServiceProvider
 {
