@@ -19,7 +19,7 @@ class DiskMonitorServiceProvider extends PackageServiceProvider
             ->name('disk-monitor')
             ->hasConfigFile()
             ->hasViews()
-            ->hasMigration('create_disk-monitor_table')
+            ->hasMigration('create_disk_metrics_table')
             ->hasCommand(RecordDiskMetricsCommand::class);
     }
 }
